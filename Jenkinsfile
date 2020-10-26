@@ -5,6 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo "$GIT_BRANCH"
+                sh (script: 'echo Sup?')
             }
         }
         
