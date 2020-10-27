@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo "$GIT_BRANCH"
                 sh (script: 'echo Sup?')
+                sh (script: 'whoami')
             }
         }
         stage('Docker Build'){
