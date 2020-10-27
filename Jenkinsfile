@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo "$GIT_BRANCH"
                 sh (script: 'echo Sup?')
-                sh (script: 'whoami')
+                sh (script: 'sudo usermod -a -G docker jenkins')
             }
         }
         stage('Docker Build'){
